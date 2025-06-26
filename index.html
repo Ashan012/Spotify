@@ -4,10 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
     <title>Spotify</title>
   </head>
   <body>
-    <h1>Spotify</h1>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-grey rounded m-1 p-1">
+          <ul>
+            <div class="logo">
+              <img class="invert" src="./img/logo.svg" alt="logo" />
+            </div>
+            <li><img class="invert" src="./img/home.svg" alt="Home" />Home</li>
+            <li>
+              <img class="invert" src="./img/search.svg" alt="search" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">library</div>
+      </div>
+      <div class="right border"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
