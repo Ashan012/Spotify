@@ -1,6 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
 }
 .left {
   width: 25vw;
@@ -9,12 +16,117 @@
 .right {
   width: 75vw;
 }
-.home {
-}
 .home ul li {
   display: flex;
   width: 14px;
   list-style: none;
   gap: 15px;
   padding-top: 14px;
+  font-weight: 700;
+}
+.heading {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  /* padding-top: 14px; */
+  padding: 23px 14px;
+  font-weight: 700;
+  font-size: 13px;
+  align-items: center;
+}
+.heading img {
+  width: 30px;
+}
+.library {
+  min-height: 75vh;
+  position: relative;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+
+  font-size: 10px;
+  gap: 13px;
+  padding: 10px 0;
+}
+.footer a {
+  text-decoration: none;
+  color: grey;
+}
+.image {
+  width: 30px;
+}
+.right {
+  margin: 16px 0;
+  position: relative;
+}
+.right .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.right .header {
+  background-color: rgb(34, 34, 34);
+}
+.right .nav img {
+  width: 20px;
+}
+.header .buttons button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.spotifyPlaylist {
+  padding: 16px;
+}
+.spotifyPlaylist h1 {
+  margin-bottom: 15px;
+}
+.spotifyPlaylist .cardContainer {
+  gap: 10px;
+}
+.spotifyPlaylist .cardContainer .card {
+  width: 200px;
+  padding: 10px;
+  background-color: #252525;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+.spotifyPlaylist .cardContainer .card img {
+  width: 100%;
+  object-fit: contain;
+}
+.cardContainer .card .play img {
+  width: 30px;
+  color: #141b34;
+  background-color: #1fdf64;
+  padding: 8px;
+  border-radius: 40px;
+  transition: all 1s ease;
+  opacity: 0;
+  cursor: pointer;
+}
+.cardContainer .card .play {
+  position: absolute;
+  top: 158px;
+  right: 15px;
+}
+.cardContainer .card .play img:hover {
+  opacity: 1;
+}
+.playbar {
+  width: 100%;
+  height: 40px;
+  background-color: #1fdf64;
+  position: absolute;
+  bottom: 0;
 }
